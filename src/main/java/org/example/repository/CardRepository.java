@@ -9,7 +9,8 @@ import java.util.List;
 @Repository
 public interface CardRepository extends JpaRepository<Card, Integer> {
 
-List <Card>  findByCardnumber (String cardnumber); //свой запрос
+Card  findByCardnumber (String cardnumber); //свой запрос
+Card findByName (String name);
 
 // @Query("SELECT s FROM Group g where g.id =: id")
 //  Group customSelect (@Param("id") int id); // свой поиск по id

@@ -3,19 +3,19 @@ package org.example.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table (name="cards")
+@Table(name = "cards")
 public class Card {
     @Id
-    @Column (name="id")
+    @Column(name = "id")
     private int id;
 
-    @Column (name="name")
+    @Column(name = "name")
     private String name;
 
-    @Column (name="cardnumber")
+    @Column(name = "cardnumber")
     private String cardnumber;
 
-    @Column (name="balance")
+    @Column(name = "balance")
     private int balance;
 
     public int getId() {
